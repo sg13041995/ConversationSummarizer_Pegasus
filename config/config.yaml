@@ -1,17 +1,28 @@
+
+# root artifact dir
 artifacts_root: artifacts
 
+# data ingestion
 data_ingestion:
   root_dir: artifacts/data_ingestion
   source_URL: https://github.com/sg13041995/Datasets/raw/main/textSummarizer_samsun.zip
   local_data_file: artifacts/data_ingestion/data.zip
   unzip_dir: artifacts/data_ingestion
 
+# data validation
 data_validation:
   root_dir: artifacts/data_validation
   STATUS_FILE: artifacts/data_validation/status.txt
   ALL_REQUIRED_FILES: ["train", "test", "validation"]
 
+# data transformation
 data_transformation:
   root_dir: artifacts/data_transformation
   data_path: artifacts/data_ingestion/samsum_dataset
   tokenizer_name: google/pegasus-cnn_dailymail
+
+# model trainer
+model_trainer:
+  root_dir: artifacts/model_trainer
+  data_path: artifacts/data_transformation/samsum_dataset
+  model_ckpt: google/pegasus-cnn_dailymail

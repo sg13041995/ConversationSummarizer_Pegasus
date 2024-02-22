@@ -3,9 +3,10 @@ from TextSummarizer.constants import *
 # importing utility functions from utils folder, common.py file
 from TextSummarizer.utils.common import read_yaml, create_directories
 
-from TextSummarizer.entity import (DataIngestionConfig)
-from TextSummarizer.entity import (DataValidationConfig)
-from TextSummarizer.entity import (DataTransformationConfig)
+from TextSummarizer.entity import (DataIngestionConfig,
+                                   DataValidationConfig,
+                                   DataTransformationConfig,
+                                   ModelTrainerConfig)
 
 class ConfigurationManager:
     # constructor
@@ -73,4 +74,29 @@ class ConfigurationManager:
         )
 
         return data_transformation_config
+    
+    # config manager for model trainer
+    # return datatype is DataIngestionConfig
+    def get_model_trainer_config(self) -> ModelTrainerConfig:
+        config = self.config.model_trainer
+        params = self.params.TrainingArguments
+
+        create_directories([config.root_dir])
+
+        model_trainer_config = ModelTrainerConfig(
+            root_dir=config.root_dir,
+            data_path=config.data_path,
+            model_ckpt = config.model_ckpt,
+            num_train_epochs = params.num_train_epochs,
+            warmup_steps = params.warmup_steps,
+            per_device_train_batch_size = params.per_device_train_batch_size,
+            weight_decay = params.weight_decay,
+            logging_steps = params.logging_steps,
+            evaluation_strategy = params.evaluation_strategy,
+            eval_steps = params.eval_steps,
+            save_steps = params.save_steps,
+            gradient_accumulation_steps = params.gradient_accumulation_steps
+        )
+
+        return model_trainer_config
 
