@@ -36,7 +36,7 @@ The system features an embedded pipeline that simplifies the fine-tuning process
 
 1. **Clone the Repository**: Begin by cloning the project repository from GitHub using the provided URL:
     ```bash
-    git clone https://github.com/sg13041995/NLP_TextSummarizer.git
+    https://github.com/sg13041995/ConversationSummarizer_Pegasus.git
     ```
 
 2. **Create a Virtual Environment**: After navigating into the cloned repository directory, create a new virtual environment:
