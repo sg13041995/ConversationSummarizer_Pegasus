@@ -1,4 +1,4 @@
-# TextSummarizer_Pegasus_Pipeline
+# PEGASUS_FineTuning_Pipeline
 
 This is a Text Summarization system that extracts insights from text data with an embedded end-to-end pipeline that eases the work of model fine-tuning. Powered by the cutting-edge Pegasus model pre-trained on the CNN / DailyMail Dataset, and meticulously fine-tuned on the SAMSum dataset, this system demonstrates efficiency and effectiveness in natural language processing (NLP).
 
