@@ -1,10 +1,10 @@
-# ConversationSummarizer_Pegasus
+# TextSummarizer_Pegasus_Pipeline
 
-This is a Text Summarization system that extracts insights from conversational data with an embedded end-to-end pipeline that eases the work of model fine-tuning. Powered by the cutting-edge Pegasus model pre-trained on the CNN / DailyMail Dataset, and meticulously fine-tuned on the SAMSum dataset, this system demonstrates efficiency and effectiveness in natural language processing (NLP).
+This is a Text Summarization system that extracts insights from text data with an embedded end-to-end pipeline that eases the work of model fine-tuning. Powered by the cutting-edge Pegasus model pre-trained on the CNN / DailyMail Dataset, and meticulously fine-tuned on the SAMSum dataset, this system demonstrates efficiency and effectiveness in natural language processing (NLP).
 
 In today's information-rich landscape, the ability to distil key points from lengthy conversations is paramount. This Text Summarization system tackles this challenge head-on, offering a seamless solution to condense sprawling dialogues into succinct summaries without compromising on essential details.
 
-The system features an embedded pipeline that simplifies the fine-tuning process of the underlying model. This will make it convenient for the developers to fine-tune the system and make it adapt to their specific conversational data and requirements.
+The system features an embedded pipeline that simplifies the fine-tuning process of the underlying model. This will make it convenient for the developers to fine-tune the system and make it adapt to their specific data and requirements.
 
 ## Dataset Overview
 
