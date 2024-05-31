@@ -128,9 +128,6 @@ ENV/
 env.bak/
 venv.bak/
 
-# My Virtual Environment
-textSum/
-
 # Spyder project settings
 .spyderproject
 .spyproject
@@ -170,3 +167,6 @@ artifacts/*
 
 # Reference
 Ref/*
+
+# Virtual Environment
+venv1/
